@@ -1,15 +1,13 @@
 # Email-Spam-Classifier-Project
 
-spam.csv is obtained from kaggel and analysed.
-The EDA reveals presence of "spam" and "ham" indicating spam and non spam messages.
+Project Title: Email Spam Classification
 
-Data is cleaned, unnecessary columns dropped for analysis.
-A length column is added to calculate and store teh length of teh message for further analysis.
-Countplots and histograms are generated for better data visualization.
+Description:
 
-This EDA then leads to the next part of the project - the determination of an email message being spam or not.
+In this project, "spam.csv" dataset obtained from Kaggle is analyzed, which contains email messages labeled as "spam" and "ham" (indicating non-spam). Exploratory data analysis (EDA) is performed to understand the dataset better and preprocess the data for further analysis.
 
-The preprocessed data is split into training and testing datasets in the ration 70:30 and a machine learning algorithm is utilized to fit the data and train the model.
-I have implemented the Support Vector Machine Algorithm which is a supervised machine learning algorithm used for classification and regression tasks.
-The kernel chosen for this is Radial Basis Function (RBF) Kernel.This yeilded the best score for the model.
-The testset is used to make the predictions after training the model and the accuracy obtained for the model is 95.215%
+The preprocessing steps involve cleaning the data and dropping unnecessary columns. Additionally,a "length" column is added to store the length of each message for further analysis. Visualizations such as countplots and histograms are generated to provide insights into the distribution of spam and non-spam messages.
+
+The EDA leads us to the next part of the project: determining whether an email message is spam or not. The preprocessed data is split into training and testing datasets in a 70:30 ratio. The Support Vector Machine (SVM) algorithm , , a supervised machine learning algorithm commonly used for classification tasks , is then utilized. The Radial Basis Function (RBF) kernel is chosen for the SVM model, which yields the best performance for this dataset.
+
+After training the model on the training dataset, the performance of the model is evaluated using the testing dataset. The model achieves an accuracy of 95.215% on the test set, indicating its effectiveness in classifying email messages as spam or non-spam.
